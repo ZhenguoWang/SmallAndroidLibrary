@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmallAndroidLibrary.iml" filepath="$PROJECT_DIR$/SmallAndroidLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smallandroidutil/smallandroidutil.iml" filepath="$PROJECT_DIR$/smallandroidutil/smallandroidutil.iml" />
+    </modules>
+  </component>
+</project>
+
