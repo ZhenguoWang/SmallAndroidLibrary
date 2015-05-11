@@ -6,7 +6,7 @@ import android.content.IntentFilter;
 import android.os.BatteryManager;
 
 /**
- * Created by wzg on 3/9/2015.
+ * Helper class for USB devices or connections.
  */
 public class USBHelper {
     private static USBHelper ourInstance = new USBHelper();
@@ -19,7 +19,8 @@ public class USBHelper {
     }
 
     public static boolean isPlugged(Context context) {
-        Intent intent = context.registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+        Intent intent = context.getApplicationContext().registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+        assert intent != null;
         int plugged = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
         return plugged == BatteryManager.BATTERY_PLUGGED_USB;
     }
